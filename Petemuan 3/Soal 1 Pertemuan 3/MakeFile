@@ -1,0 +1,11 @@
+NilaiDeterminan: NilaiDeterminan.o
+	g++ NilaiDeterminan.o -o NilaiDeterminan
+
+NilaiDeterminan.o: NilaiDeterminan.cpp
+	g++ -c NilaiDeterminan.cpp -o NilaiDeterminan.o
+
+run: NilaiDeterminan
+	./NilaiDeterminan
+
+clean:
+	rm -f NilaiDeterminan.o NilaiDeterminan
